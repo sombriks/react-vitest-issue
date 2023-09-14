@@ -1,4 +1,8 @@
-# React + TypeScript + Vite
+# [react-vitest-issue](https://github.com/sombriks/react-vitest-issue)
+
+sample project to explore a testing issue
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

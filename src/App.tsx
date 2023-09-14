@@ -1,11 +1,10 @@
+import React from "react";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import {useConuterHook} from "./counterHook.ts";
+import {Counter} from "./components/Counter.tsx";
 
 function App() {
-
-    const {count, updateCount} = useConuterHook()
 
     return (
         <>
@@ -19,9 +18,7 @@ function App() {
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <button title="counter" onClick={updateCount}>
-                    count is {count}
-                </button>
+               <Counter/>
                 <p>
                     Edit <code>src/App.tsx</code> and save to test HMR
                 </p>

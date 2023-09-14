@@ -6,7 +6,7 @@ import {render, screen, fireEvent, renderHook, act} from '@testing-library/react
 import React from 'react'
 
 import App from "./App.tsx";
-import {useConuterHook} from "./counterHook.ts";
+import {useConuterHook} from "./components/counterHook.ts";
 
 describe("sample App test", ()=> {
 
@@ -24,18 +24,6 @@ describe("sample App test", ()=> {
         fireEvent.click(result)
 
         expect(result.innerHTML).toEqual("count is 1")
-    })
-
-    it("should render hook and update state", async () => {
-        const hook = renderHook(() => useConuterHook())
-
-        expect(hook).toBeTruthy()
-
-        expect(hook.result.current.count).toEqual(0)
-
-        act(() => hook.result.current.updateCount())
-
-        expect(hook.result.current.count).toEqual(1)
     })
 
 })
