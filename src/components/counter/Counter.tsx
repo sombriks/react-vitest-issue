@@ -1,8 +1,8 @@
-import {useCounterHook} from "./counterHook.ts";
+import {useCounterHooks} from "./counterHooks.ts";
 
 export const Counter = () => {
 
-    const {count, updateCount} = useCounterHook()
+    const {count, updateCount} = useCounterHooks()
 
     return <>
         <button title="counter" onClick={updateCount}>
