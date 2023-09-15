@@ -1,6 +1,6 @@
 # [react-vitest-issue](https://github.com/sombriks/react-vitest-issue)
 
-[![testing](https://github.com/sombriks/react-vitest-issue/actions/workflows/main.yml/badge.svg)](https://github.com/sombriks/react-vitest-issue/actions/workflows/node.js.yml)
+[![testing](https://github.com/sombriks/react-vitest-issue/actions/workflows/node.js.yml/badge.svg)](https://github.com/sombriks/react-vitest-issue/actions/workflows/node.js.yml)
 
 Sample project to explore a testing issue
 
