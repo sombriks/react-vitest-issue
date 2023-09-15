@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export function useConuterHook() {
+export function useCounterHook() {
 
     const [count, setCount] = useState(0)
 

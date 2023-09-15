@@ -1,12 +1,10 @@
 import {describe, expect, it} from "vitest";
-import {render, screen, fireEvent, renderHook, act} from '@testing-library/react';
+import {render, screen, fireEvent} from '@testing-library/react';
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import React from 'react'
 
 import App from "./App.tsx";
-import {useConuterHook} from "./components/counterHook.ts";
 
 describe("sample App test", ()=> {
 

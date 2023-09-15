@@ -1,8 +1,10 @@
+// @ts-ignore
 import React from "react";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import {Counter} from "./components/Counter.tsx";
+import {Counter} from "./components/counter/Counter.tsx";
+import {Feed} from "./components/microblogging/Feed.tsx";
 
 function App() {
 
@@ -22,6 +24,9 @@ function App() {
                 <p>
                     Edit <code>src/App.tsx</code> and save to test HMR
                 </p>
+                <div>
+                    <Feed/>
+                </div>
             </div>
             <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
