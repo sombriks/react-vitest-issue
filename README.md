@@ -2,6 +2,35 @@
 
 sample project to explore a testing issue
 
+## The issue
+
+Some tests weren't proper firing the expected updates. mainly the tests rendering
+just the hooks instead of the complete documents, like this:
+
+```javascript
+const hooks = renderHook(() => useFeedHooks())
+// the rest of the test
+```
+
+This hook has a `useEffect` hook.
+
+When rendering the component the expected behavior is present:
+
+```jsx
+const component = render(<Feed/>)
+// the rest of the test
+```
+
+Basically when rendering just the hooks, the `useEffect` hook **has no effect**.
+
+## The solution
+
+For now, don't depende on useEffects inside custom hooks. 
+
+More investigation is needed.
+
+---
+
 ## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
